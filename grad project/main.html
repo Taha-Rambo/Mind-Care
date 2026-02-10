@@ -1,115 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mind Care - العناية بالصحة النفسية</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <h1>🧠 Mind Care</h1>
-                <p class="tagline">رحلة العناية بصحتك النفسية</p>
-            </div>
-        </header>
-
-        <div id="welcome-screen" class="screen active">
-            <div class="welcome-content">
-                <h2>أهلاً وسهلاً بك في Mind Care</h2>
-                <p>نحن هنا لمساعدتك في فهم حالتك النفسية وتقديم الدعم المناسب</p>
-                
-                <div class="features">
-                    <div class="feature">
-                        <span class="feature-icon">🤖</span>
-                        <h3>ذكاء اصطناعي متقدم</h3>
-                        <p>تقييم دقيق بناءً على أحدث الأبحاث النفسية</p>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">🔒</span>
-                        <h3>خصوصية تامة</h3>
-                        <p>جميع معلوماتك محمية ولن يتم مشاركتها</p>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">💡</span>
-                        <h3>حلول عملية</h3>
-                        <p>نصائح وتوجيهات قابلة للتطبيق</p>
-                    </div>
-                </div>
-
-                <div class="disclaimer">
-                    <p><strong>⚠️ تنويه مهم:</strong> هذا التقييم للاسترشاد فقط وليس بديلاً عن استشارة طبيب نفسي مختص</p>
-                </div>
-                
-                <button id="start-test" class="btn-primary">ابدأ التقييم النفسي</button>
-            </div>
-        </div>
-
-        <div id="question-screen" class="screen">
-            <div class="test-header">
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div id="progress" class="progress-fill"></div>
-                    </div>
-                    <span id="question-counter">1 / 20</span>
-                </div>
-            </div>
-            
-            <div class="question-container">
-                <h3 id="question-text"></h3>
-                <div id="answers-container" class="answers-grid">
-                    <!-- الأجوبة ستظهر هنا ديناميكياً -->
-                </div>
-            </div>
-            
-            <div class="navigation-buttons">
-                <button id="prev-btn" class="btn-secondary" style="display:none;">السؤال السابق</button>
-                <button id="next-btn" class="btn-primary" disabled>التالي</button>
-            </div>
-        </div>
-
-        <div id="result-screen" class="screen">
-            <div class="result-container">
-                <div class="result-header">
-                    <div id="result-icon" class="result-icon"></div>
-                    <h2 id="result-title"></h2>
-                    <p id="result-subtitle"></p>
-                </div>
-
-                <div class="result-details">
-                    <div id="result-description" class="result-description"></div>
-                    
-                    <div class="recommendations">
-                        <h3>📋 التوصيات الشخصية لك</h3>
-                        <ul id="recommendations-list"></ul>
-                    </div>
-
-                    <div class="doctor-consultation">
-                        <h3 id="doctor-advice-title">👨‍⚕️ هل تحتاج لاستشارة طبيب؟</h3>
-                        <p id="doctor-advice"></p>
-                        <div id="urgent-warning" class="urgent-warning" style="display:none;">
-                            <p><strong>⚠️ تحذير:</strong> ننصحك بشدة بمراجعة طبيب نفسي في أسرع وقت ممكن</p>
-                        </div>
-                    </div>
-
-                <div class="result-actions">
-                    <button id="retake-test" class="btn-secondary">إعادة التقييم</button>
-                    <button id="download-report" class="btn-primary">تحميل التقرير</button>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2026 Mind Care - جميع الحقوق محفوظة</p>
-            <div class="footer-links">
-                <a href="#privacy">سياسة الخصوصية</a> | 
-                <a href="#terms">شروط الاستخدام</a> | 
-                <a href="#contact">اتصل بنا</a>
-            </div>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
